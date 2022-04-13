@@ -1,0 +1,31 @@
+body {
+    background-image: url(../assets/img/réseaux-hr.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+    overflow: hidden;
+}
+footer {
+    margin-top: 54rem;
+}
+.networks {
+    display: block;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    top: 25%;
+    left: 40%;
+}
+.networks>h1 {
+    font-size: 60px;
+}
+.networks>a>li, .networks>a>h2 {
+    font-size: 30px;
+    color: black;
+}
+.networks>a {
+    text-decoration: none;
+}
+.networks>a>li:hover, .networks>a>h2:hover {
+    text-decoration: underline;
+}

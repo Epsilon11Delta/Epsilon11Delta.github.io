@@ -1,0 +1,71 @@
+body {
+    height: 100vh;
+    margin: 0px;
+    background: linear-gradient(50deg, orange, red);
+    background-repeat: space;
+    display:flex;
+}
+/*Div*/
+div {
+    justify-content: center;
+    align-self: center;
+    font-family: "FuturaExtraBlack";
+    font-size: 72px;
+    line-height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    position: sticky;
+}
+/*Polices + textes*/
+@font-face {
+    font-family: "HelveticaNeue";
+    src: url("../../websites/whopper-assets/helvneue.ttf");
+}
+@font-face {
+    font-family: "FuturaExtraBlack";
+    src: url("../../websites/whopper-assets/futuraextrablack.ttf")
+}
+#ed {
+    font-family: "HelveticaNeue";
+    font-size: 24px;
+    text-align: center;
+}
+/*Images*/
+.img-whopper {
+    width: 46%;
+    display: inline-block;
+    position: absolute;
+    top: 169px;
+    right: 208px;
+    transition: 1s;
+}
+.img-nike {
+    width: 46%;
+    display: inline-block;
+    position: absolute;
+    top: 17px;
+    right: 208px;
+    transition: 1s;
+}
+/*Textes*/
+h1 {
+    animation: color 3s infinite linear;
+    transition: 0s;
+}
+h1:nth-child(2){
+    animation-delay: 1s;
+}
+h1:nth-child(3){
+    animation-delay: 2s;
+}
+@keyframes color {
+    0% {
+        color: black;
+    }
+    50% {
+        color:red;
+    }
+    100% {
+        color:black;
+    }
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Système Solaire - Epsilon Delta</title>
+    <link rel="stylesheet" href="../css/universal-css.css">
+</head>
+
+<style>
+ body {
+    margin: 0;
+    background-image: radial-gradient(#141414, #000000);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform-style: preserve-3d;
+ }
+ #solar {
+     display: block;
+     position: relative;
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: 100px;
+     height: 100vh;
+     transform: rotateX(60deg);
+     transform-style: preserve-3d;
+ }
+ #link {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+ }
+ a {
+     transition: 0.25s;
+     color: white;
+     font-size: 40px;
+     font-family: "HelveticaNeueCDBold";
+     text-decoration: none;
+ }
+ a:hover {
+     transition: 0.25s;
+     color: seagreen;
+ }
+ .trace {
+     position: absolute;
+     border: solid 2px white;
+     border-radius: 100%;
+     margin: auto;
+     height: var(--distance);
+     width: var(--distance);
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     transform-origin: center;
+     animation: tourne var(--temps) infinite linear;
+     transform-style: preserve-3d;
+     transform: rotateX(60deg);
+ }
+ /*Planètes*/
+ .planète {
+    position:absolute;
+    height: var(--taille);
+    width: var(--taille);
+    border-radius: 50%;
+    top: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    animation: planète-tourne var(--temps) infinite linear;
+ }
+ .soleil {
+     transform-origin: center;
+    transform: rotateX(-90deg) translateX(-50%) translateY(30%);
+ }
+ @keyframes tourne{
+     0% {
+         transform: translate(-50%, -50%) rotate(0);
+     }
+     100% {
+         transform: translate(-50%, -50%) rotate(360deg);
+     }
+ }
+@keyframes planète-tourne {
+    0% {
+        transform: translate(-50%, -50%) rotate(0) rotateX(-60deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg) rotateX(-60deg);
+    }
+}
+</style>
+
+<body>
+    <div id="solar">
+        <div class="trace" style="--distance: 800px; --temps:1980s;">
+            <div class="planète" style="--taille: 10px; background-color:#8394f1" ><!--Neptune--></div>
+        </div>
+        <div class="trace" style="--distance: 700px; --temps:1008s;">
+            <div class="planète" style="--taille: 20px; background-color:#83ddf3"><!--Uranus--></div>
+        </div>
+        <div class="trace" style="--distance: 600px; --temps:348s;">
+            <div class="planète" style="--taille: 35px; background-color:#f2d5ae"><!--Saturne--></div>
+        </div>
+        <div class="trace" style="--distance: 500px; --temps:144s;">
+            <div class="planète" style="--taille: 40px; background-color:#92755a"><!--Jupiter--></div>
+        </div>
+        <div class="trace" style="--distance: 400px; --temps:24s;">
+            <div class="planète" style="--taille: 15px; background-color:#bc5635"><!--Mars--></div>
+        </div>
+        <div class="trace" style="--distance: 300px; --temps:12s;">
+            <div class="planète" style="--taille: 20px; background-color:#00befa"><!--Terre-->
+                <div class="trace" style="--distance: 30px; --temps:1s;">
+                    <div class="planète" style="--taille: 4px; background-color:#fff"></div><!--Lune-->
+                </div>
+            </div>
+        </div>
+        <div class="trace" style="--distance: 200px; --temps:7.5s;">
+            <div class="planète" style="--taille: 15px; background-color:#c2a37e"><!--Vénus--></div>
+        </div>
+        <div class="trace" style="--distance: 100px; --temps:3s;">
+            <div class="planète" style="--taille: 10px; background-color:#b39c7c"><!--Mercure--></div>
+        </div>
+        <div class="trace" style="--distance: 0px;">
+                <div class="planète soleil" style="--taille: 80px; background-image: radial-gradient(yellow, orange)"><!--Soleil--></div>
+        </div>
+    </div>
+    <div id="link">
+            <a href="../créations.html"><p>(Epsilon Delta)</p></a>
+    </div>
+</body>
+
+</html>

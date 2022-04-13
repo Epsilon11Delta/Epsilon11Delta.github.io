@@ -1,0 +1,146 @@
+body {
+    margin: 15px;
+    transition: 0.5s;
+}
+.bodynight {
+    transition: 0.5s;
+    background-color:rgb(0, 0, 0);
+}
+#link {
+    text-align: center;
+    color: black;
+}
+/*Bouton*/
+#button {
+    margin: auto;
+    align-self: center;
+    width: 23em;
+    height: 7em;
+    border: solid 0px;
+    border-radius: 3.5em;
+    overflow: hidden;
+    display: flex;
+}
+.button-sun {
+    transition: 0.5s;
+    background: rgb(255, 68, 0);
+}
+.button-moon {
+    transition: 0.5s;
+    background: rgb(0, 65, 77);
+}
+#knob {
+    position: relative;
+    border: solid 0px;
+    border-radius: 100%;
+    background: white;
+    margin: auto;
+    width: 6em;
+    height: 6em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+.knob-start {
+    transition: 0.5s;
+    transform: translateX(-130px); 
+}
+.knob-end{
+    transition: 0.5s;
+    transform: translateX(130px); 
+}
+/*Illustration*/
+#environnement {
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    overflow: hidden;
+    border: solid 0px;
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+}
+.env-sun {
+    transition: 0.5s;
+    background: linear-gradient(to bottom, #BE4405, #F6C60C);
+}
+.env-night {
+    transition: 0.5s;
+    background: linear-gradient(to bottom, #111936, #285A7B);
+}
+#sea {
+    position: relative;
+    width: 30em;
+    height: 10em;
+    bottom: -37px;
+    background: repeating-radial-gradient(ellipse farthest-corner at center -400%, #f5c30e 30%, #518eac 90%) repeat scroll 0 0 #518eac;
+}
+/*soleil*/
+#sun {
+    width: 5em;
+    height: 5em;
+    position: relative;
+    border: 0px solid;
+    border-radius: 50%;
+    background: #F2EF88;
+    box-shadow: 0 0 20px rgba(242, 239, 136, 0.4);
+}
+.sun-show {
+    transition: 0.5s;
+    left: 90px;
+    bottom: -170px;
+}
+.sun-hidden {
+    transition: 0.5s;
+    left: 70px;
+    bottom: -250px;
+}
+/*Lune*/
+#moon {
+    width: 5em;
+    height: 5em;
+    position: relative;
+    border: 0px solid;
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0 0 20px rgba(223, 223, 223, 0.4);
+}
+.moon-hidden {
+    transition: 0.5s;
+    left: 350px;
+    bottom: 50px;
+}
+.moon-show {
+    transition: 0.5s;
+    left: 150px;
+    bottom: 10px;
+}
+/*Etoiles*/
+.star-zone-hidden {
+    transition: 0.5s;
+    transform: translate(250px, -110px);
+}
+.star-zone-show {
+    transition: 0.5s;
+    transform: translate(5px,-5px);
+}
+#stars {
+    width: 3px;
+    height: 3px;
+    background-color: white;
+    border: solid 0px;
+    border-radius: 100%;
+    position: relative;
+    box-shadow: 0 0 5px rgba(223, 223, 223, 0.4);
+}
+#stars:nth-child(1) {
+    left: 128px;
+    bottom: 27px
+}
+#stars:nth-child(2) {
+    left: 65px;
+    bottom: -70px
+}
+#stars:nth-child(3) {
+    left: 241px;
+    bottom: -100px
+}

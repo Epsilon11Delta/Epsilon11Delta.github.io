@@ -1,0 +1,211 @@
+/*************/
+/**Bannière**/
+/***********/
+.banner {
+    display: block;
+    margin-top: -15px;
+    height: 51em;
+    text-align: center;
+    background-image: url("../assets/img/banner.png");
+    background-size: cover;
+    padding-bottom: 70px;
+}
+
+.title {
+    padding-top: 8cm;
+    font-size: 100px;
+}
+.subtitle {
+    display: flex;
+    text-align: center;
+    font-size: 50px;
+    justify-content: center;
+}
+.subtitle>p {
+    margin: 0px;
+    padding-right: 10px;
+}
+.subtitle>span {
+    font-family: "HelveticaNeueCDBold";
+    margin-top: -3px;
+}
+/* .inazuma {
+    font-family: "Distorsion";
+}
+@font-face {
+    font-family: "Distorsion";
+    src: url(../assets/fonts/distorsiondosanalogue.otf);
+} */
+
+/***************/
+/*description*/
+/*************/
+#description {
+    display: flex;
+    padding-top: 15em;
+    padding-bottom: 15em;
+}
+.desc-text {
+    display: block;
+    width: 60%;
+    height: 50%;
+    margin: 100px;
+
+}
+.desc-text>p>br {
+    content: "";
+    display: block;
+    margin-bottom: 15px;
+}
+.desc-img {
+    display: block;
+    width: 25em;
+    height: 25em;
+    overflow: hidden;
+    border: solid 0px;
+    border-radius: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.desc-img>img {
+    position: relative;
+    top: -80px;
+    left: -50px;
+}
+
+/***************************/
+/*échantillon de créations*/
+/*************************/
+.creations{
+    margin-bottom: 50px;
+}
+.creations-container {
+        background: linear-gradient(45deg, #ADE25D, #CFFFB3);
+        padding-top: 15px;
+        padding-bottom: 50px;
+}
+.creations>h2{
+    font-size: 50px;
+    text-align: center;
+}
+.créations-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.creation-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "div1 div2 div3"
+                         "div4 div5 div6"
+                         "div7 div8 div9";
+    margin-top: 7em;
+    margin-bottom: 3em;
+}
+.creation-grid>div {
+    width: 10em;
+    height: 10em;
+    overflow: hidden;
+    border: 0px solid;
+    border-radius: 0.7em;
+    position: relative;
+    transition: 1s;
+}
+.div1 {
+    grid-area: div1;
+}
+.div2 {
+    grid-area: div2;
+}
+.div3 {
+    grid-area: div3;
+}
+.div4 {
+    grid-area: div4;
+    animation-delay: 0.3s;
+}
+.div5 {
+    grid-area: div5;
+}
+.div6 {
+    grid-area: div6;
+    animation-delay: 0.3s;
+}
+.div7 {
+    grid-area: div7;
+    animation-delay: 0.6s;
+}
+.div8 {
+    grid-area: div8;
+}
+.div9 {
+    grid-area: div9;
+    animation-delay: 0.6s;
+}
+/*Grid animations activations*/
+.grid-gauche-one {
+    animation: gauche-sortie 1s ease-in-out alternate;
+}
+.grid-droite-one {
+    animation: droite-sortie 1s ease-in-out alternate;
+}
+.grid-milieu-one {
+    animation: haut-sortie 1s ease-in-out alternate;
+}
+.grid-milieu-two {
+    animation: bas-sortie 1s ease-in-out alternate;
+}
+/*Grid animations*/
+@keyframes gauche-sortie {
+    50% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes droite-sortie {
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@keyframes haut-sortie {
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes bas-sortie {
+    50% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.voirplus-container {
+    margin: 50px;
+}
+.voirplus {
+    left: 46%;
+}
+#voirplus {
+    transition: 0.5s;
+    border: 5px solid black;
+    padding: 25px;
+    font-size: 20px;
+    border-radius: 5em;
+    color: black;
+    text-decoration: none;
+}
+#voirplus:hover {
+    transition: 0.5s;
+    background: black;
+    color: white;
+}

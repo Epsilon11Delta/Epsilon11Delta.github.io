@@ -1,0 +1,25 @@
+body {
+    background-color: #009AFF;
+    margin: 0px;
+}
+.text {
+padding: 10px;
+display: block;
+}
+.loading {
+    font-size: 30px;
+}
+.barreZone{
+    display: inline-block;
+    margin-top: 5px;
+}
+.barre{
+    margin-bottom: 5px;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    background-color: #2a2a8c;
+}
+.envoi{
+    padding: 10px;
+    display: block;
+}
