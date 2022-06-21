@@ -75,8 +75,13 @@
 /***********/
 /*colonnes*/
 /*********/
+.colon-zone-container {
+    z-index: 0;
+    position: relative;
+    bottom: -20px;
+}
 .colon-zone {
-    z-index: 3;
+    opacity: 50%;
     display: flex;
     position: relative;
     bottom: 0;
@@ -138,6 +143,13 @@
     100% {
         transform: scaleY(1);
     }
+}
+/*******/
+/*Main*/
+/*****/
+main {
+    position: relative;
+    z-index: 2;
 }
 /***************************/
 /*échantillon de créations*/

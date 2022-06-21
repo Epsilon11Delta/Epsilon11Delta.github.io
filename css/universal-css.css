@@ -56,10 +56,13 @@ header>div>a:hover {
 }
 /*Footer*/
 footer {
+    position: relative;
+    z-index: 2;
     background-color: #040f16;
     color: white;
     font-size: 18px;
     display: flex;
+    height: 80px;
 }
 footer>p {
     margin-left: 10px;
